@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3732F44-90B8-479D-AA69-4F3F473D33F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Simple_Selenium_Lib</RootNamespace>
+    <AssemblyName>Simple Selenium Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.10.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RequiredDependencies\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\net45\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RequiredDependencies\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RequiredDependencies\Selenium.Support.3.14.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonValidation.cs" />
+    <Compile Include="GlobalTestElements.cs" />
+    <Compile Include="ManipulateWebPageElements.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="RequiredDependencies\NUnit.3.10.1\build\NUnit.props" />
+    <None Include="RequiredDependencies\NUnit.3.10.1\CHANGES.md" />
+    <None Include="RequiredDependencies\NUnit.3.10.1\NUnit.3.10.1.nupkg" />
+    <None Include="RequiredDependencies\Selenium.Support.3.14.0\Selenium.Support.3.14.0.nupkg" />
+    <None Include="RequiredDependencies\Selenium.WebDriver.3.14.0\Selenium.WebDriver.3.14.0.nupkg" />
+    <None Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\Selenium.WebDriverBackedSelenium.3.14.0.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net20\nunit.framework.dll" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net20\nunit.framework.pdb" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net20\nunit.framework.xml" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net20\NUnit.System.Linq.dll" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net35\nunit.framework.dll" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net35\nunit.framework.pdb" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net35\nunit.framework.xml" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net40\nunit.framework.dll" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net40\nunit.framework.pdb" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net40\nunit.framework.xml" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net45\nunit.framework.dll" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net45\nunit.framework.pdb" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\net45\nunit.framework.xml" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\netstandard1.6\nunit.framework.dll" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\netstandard1.6\nunit.framework.pdb" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\netstandard1.6\nunit.framework.xml" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\netstandard2.0\nunit.framework.dll" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\netstandard2.0\nunit.framework.pdb" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\lib\netstandard2.0\nunit.framework.xml" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\LICENSE.txt" />
+    <Content Include="RequiredDependencies\NUnit.3.10.1\NOTICES.txt" />
+    <Content Include="RequiredDependencies\Selenium.Support.3.14.0\lib\net35\WebDriver.Support.dll" />
+    <Content Include="RequiredDependencies\Selenium.Support.3.14.0\lib\net35\WebDriver.Support.xml" />
+    <Content Include="RequiredDependencies\Selenium.Support.3.14.0\lib\net40\WebDriver.Support.dll" />
+    <Content Include="RequiredDependencies\Selenium.Support.3.14.0\lib\net40\WebDriver.Support.xml" />
+    <Content Include="RequiredDependencies\Selenium.Support.3.14.0\lib\net45\WebDriver.Support.dll" />
+    <Content Include="RequiredDependencies\Selenium.Support.3.14.0\lib\net45\WebDriver.Support.xml" />
+    <Content Include="RequiredDependencies\Selenium.Support.3.14.0\lib\netstandard2.0\WebDriver.Support.dll" />
+    <Content Include="RequiredDependencies\Selenium.Support.3.14.0\lib\netstandard2.0\WebDriver.Support.xml" />
+    <Content Include="RequiredDependencies\Selenium.WebDriver.3.14.0\lib\net35\WebDriver.dll" />
+    <Content Include="RequiredDependencies\Selenium.WebDriver.3.14.0\lib\net35\WebDriver.xml" />
+    <Content Include="RequiredDependencies\Selenium.WebDriver.3.14.0\lib\net40\WebDriver.dll" />
+    <Content Include="RequiredDependencies\Selenium.WebDriver.3.14.0\lib\net40\WebDriver.xml" />
+    <Content Include="RequiredDependencies\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.dll" />
+    <Content Include="RequiredDependencies\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.xml" />
+    <Content Include="RequiredDependencies\Selenium.WebDriver.3.14.0\lib\netstandard2.0\WebDriver.dll" />
+    <Content Include="RequiredDependencies\Selenium.WebDriver.3.14.0\lib\netstandard2.0\WebDriver.xml" />
+    <Content Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\net35\Selenium.WebDriverBackedSelenium.dll" />
+    <Content Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\net35\Selenium.WebDriverBackedSelenium.xml" />
+    <Content Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\net40\Selenium.WebDriverBackedSelenium.dll" />
+    <Content Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\net40\Selenium.WebDriverBackedSelenium.xml" />
+    <Content Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\net45\Selenium.WebDriverBackedSelenium.dll" />
+    <Content Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\net45\Selenium.WebDriverBackedSelenium.xml" />
+    <Content Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\netstandard2.0\Selenium.WebDriverBackedSelenium.dll" />
+    <Content Include="RequiredDependencies\Selenium.WebDriverBackedSelenium.3.14.0\lib\netstandard2.0\Selenium.WebDriverBackedSelenium.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
