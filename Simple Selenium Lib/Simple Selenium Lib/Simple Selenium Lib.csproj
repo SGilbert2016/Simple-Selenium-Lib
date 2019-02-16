@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonValidation.cs" />
+    <Compile Include="FindWebPageElements.cs" />
     <Compile Include="GlobalTestElements.cs" />
     <Compile Include="ManipulateWebPageElements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
